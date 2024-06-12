@@ -1,0 +1,50 @@
+.mainfooter{
+  background-color: black; 
+      color: #fff; 
+      padding: 20px; 
+      text-align: center; 
+      height: auto;
+      width: auto;
+      margin-top: 90px;
+
+}
+
+
+.footer-image{
+  position: absolute;
+    top: -112px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 254px;
+    margin-top: 45px;
+
+
+}
+
+
+
+.footer-head-message{
+  text-align: center;
+  margin-top: 40px;
+
+}
+
+.footer-noraml-message{
+  margin-top: 70px;
+}
+
+@media only screen and (max-width: 767px) {
+  footer.Footer form#footer-newsletter .Form__Input {
+      max-width: calc(100% - 143px);
+  }
+}
+
+.Form__Submit {
+  height: 46px !important;
+}
+
+.Form__Input{
+  height: 46px !important;
+
+}
+

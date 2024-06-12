@@ -1,0 +1,35 @@
+.footer-div {
+    max-width: 1170px;
+    margin-top: 30px;
+}
+
+.footer-div a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col {
+    width: 23%; /* Adjust as needed */
+}
+
+.listMargin {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 0;
+}
+
+.listMargin li {
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-col h4 {
+    margin-left: 0;
+}

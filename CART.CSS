@@ -1,0 +1,215 @@
+body{
+    background-color: lightblue;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' ,sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8% ;
+    border: 1px solid red;
+
+}
+
+nav .logo{
+    font-size: 32px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav ul li {
+    display:inline-block;
+    list-style: none;
+
+}
+
+nav ul li a{
+    display: block;
+    margin:0 10px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+}
+
+nav ul li a::before{
+    content: '';
+    position:absolute ;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2.5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+nav ul i{
+    font-size: 22px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.flex-box{
+    display: flex;
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.left{
+    width: 50%;
+}
+
+.big-img img{
+        width: inherit;
+        border: 2px solid black;
+}
+
+.images{
+    display: flex;
+    justify-content: space-between;
+    width: 68%;
+    margin-top: 15px;
+}
+
+.small-img{
+    width: 50px;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+
+.small-img img{
+    width: inherit;
+    cursor: pointer;
+    transition: all  0.3s ease;
+}
+
+.small-img:hover img{
+    transform:scale(1.2);
+}
+
+.url{
+    font-size:16px;
+    font-weight: 400;
+    color: rgb(255,102,0)
+}
+
+
+.pName{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top:50px;
+}
+
+.Ratings i{
+    color: rgb(255, 115, 0);
+}
+
+.price{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.size{
+    display: flex;
+    align-items: center;
+    margin:20px 0;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.psize p{
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.psize{
+    width:60px;
+    height: 30px;
+    border:1px solid #ff5e00;
+    color: #000;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 10px;
+    padding-top: 6px;
+}
+
+.psize.active{
+    border-width:1px;
+    color: #ff5e00;
+    font-weight: 500;
+    font-weight: 500;
+}
+.Quantity{
+    display: flex;
+}
+
+.Quantity p{
+    font-size: 18px;
+    font-weight:500;
+
+}
+
+.Quantity input{
+    width:40px;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.btn-box{
+    display: flex;
+    margin: 40px 0;
+}
+
+.btn-box button{
+    /* width: 120px; */
+    font-size: 18px;
+    padding: 8px 25px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+.cart-btn{
+    background-color: #ff5e00;
+    margin-right: 20px;
+}
+.buy-btn{
+    background-color: #dc1bfec5;
+    margin-right: 10px;
+}
+
+.cart-btn:hover{
+    background-color: #ff3c00;
+}
+
+.buy-btn:hover{
+    background-color: #27a4dee2;
+}
+
+
+
+
+
+

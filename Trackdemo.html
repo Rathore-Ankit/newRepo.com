@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Order</title>
+    <link  href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            /* background: url('your-image.webp') no-repeat center center fixed; */
+            /* background-size: cover; */
+            height: 100vh;}
+        .Track-navbar{
+            text-align: center;
+            padding: 10px;
+            border: 1px solid whitesmoke;
+            }
+        
+        .container {
+            width: 130%;
+            max-width: 100%;
+            display: flex;
+            height: 70%;
+        }
+        .left-side {
+            flex: 1;
+            margin-left: 0%;
+            margin-top: 0%;
+            width: 130%;
+        }
+
+        .left-side img{
+            width: 130%;
+            height: 100%;
+        }
+        .right-side {
+            flex: 1;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            margin-left: 11%;
+            margin-top: 3%;
+        }
+
+        .Trackorder{
+            width: 50%;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"] {
+            /* width: 100%; */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        
+        /* here we are writting footer css */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer-left {
+            display: flex;
+            align-items: center;
+            font-family: Inconsolata;
+;
+        }
+        .footer-left img {
+            width: 20px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .footer-right {
+            display: flex;
+        }
+        .footer-right a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .footer-right a:hover {
+            opacity: 0.7;
+        }
+
+        button {
+  height: 50px;
+  margin: 5px;
+  width: 120px;
+  background: #333;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404c5d 1px;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+    margin-top: 8%;
+}
+
+button:hover {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+button:active {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+
+</style>
+</head>
+<body>
+
+    <div class="Track-navbar">
+        <img src="img/Trackorder.png" alt="">
+    </div>
+    <div class="container">
+        <div class="left-side">
+            <img src="img/Trackimg.png" alt="Image" style="width: 100%;">
+        </div>
+        <div class="right-side">
+            <h2><b>Track Order By</b></h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <input class="radiobutton" type="radio" name="radiobox">AWB Number
+            <input  class="radiobutton" type="radio" name="radiobox">Order Number
+                </div>
+                <div class="form-group">
+                    
+                    <input type="text" class="Trackorder" name="email" required placeholder="Enter AWB number to Search">
+                </div>
+                <div class="form-group">
+                    
+                </div>
+                
+
+                <button>Track Order</button>
+
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="footer-left">
+            Call us: 9059938941 (09:30 AM to 18:30 PM from Monday to Saturday)
+        </div>
+        <div class="footer-right">
+            <a href="#"><i class="ri-instagram-line " style="font-size: 25px;" ></i></a>
+            <a href="#"><i class="ri-facebook-circle-line" style="font-size: 25px;"></i></a>
+            <a href="#"><i class="ri-youtube-line" style="font-size: 25px;" ></i></a>
+            <a href="#"><i class="ri-twitter-x-line" style="font-size: 25px;"></i></a>
+            <a href="#"><i class="ri-linkedin-box-line" style="font-size: 25px;"></i></a>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+    "git.enabled": true,
+    "git.autofetch": false,
+    "git.detectSubmodules": true,
+    "git.enableStatusBarSync": true,
+    "git.postCommitCommand": "sync",
+    "git.promptToSaveFilesBeforeCommit": "staged"
+}

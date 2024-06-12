@@ -1,0 +1,34 @@
+.footer-div {
+    max-width: 1170px;
+    margin: auto;
+
+}
+
+.footer-div a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.footer-col{
+    width: 25%;
+    justify-content: left;
+}
+
+.listMargin {
+   margin-left: -35px;
+}
+
+.listMargin li {
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
