@@ -73,13 +73,15 @@ li:last-child {
     text-align: center;
     font-size: 15px;
     background-color: #F9F6F1;
+    font-family: fantasy;
 
     
 }
 
 .countmessage{
   text-align: center;
-  margin-top:0px
+  margin-top:0px;
+  font-family: 'Audiowide';
 }
 .CountdownBody {
     border: 1px solid grey;
@@ -113,11 +115,8 @@ text-align: center;
 
 /* position:fixed; */
     display: flex;
-    /* justify-content: right; */
     width: 100%;
-    /* justify-content: space-between; */
     background-color:whitesmoke;
-    /* border: 1px double black; */
     text-align: center;
     margin-top:0px;
     margin-bottom:-80px;
@@ -145,23 +144,15 @@ font-size:100%;
 .Logodesign{
     font-family: "Audiowide", sans-serif;
     margin-left: 35rem;
-    /* text-align: center; */
-    /* display: flex-box; */
+   
     
 }
-/* 
-#NeemanPostion.Neemans.Logodesign{
-    margin-left: 80rem;
-} */
 
-/* .NeemanPosition{
-    text-align: center;
-    position: fixed;
-} */
 .Neemans h1{
     text-align: center;
     margin-top: 1%;
-    color: blue;
+    color: blue
+    ;
 }
 
  .navbar{
@@ -1684,3 +1675,8 @@ background: linear-gradient(to bottom, #426a79, #3e2c75); /* W3C, IE 10+/ Edge, 
 
 }
 
+
+.py-24 {
+  padding-top: 0rem;
+  padding-bottom: 3rem;
+}
