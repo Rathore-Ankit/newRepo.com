@@ -2,6 +2,14 @@
     size: 20px;
 }
 
+/* this is heading title css for all headings */
+.Heading-for-Title{
+  text-align: center;
+  font-family:Audiowide, sans-serif ;
+  margin: 2px;
+  padding: 2px;
+  font-size: 40px;
+}
 
 body{
   padding: 0px;
@@ -327,15 +335,9 @@ z-index: 1;
 .container3 img{
         max-width: 100%; /* Ensures the image doesn't exceed the width of its container */
             max-height: 100%;
-            margin-top: -6%;
-            margin-bottom:1%;
+            /* margin-top: -6%; */
+            /* margin-bottom:1%; */
 
-    }
-
-    .SummerDeals{
-        
-        font-family: Jaro;
-        margin-bottom: -1%;
     }
 
     .product-card {
@@ -383,12 +385,10 @@ z-index: 1;
       background-color:#056bfa49;
   }
     
-.Explore{
-  margin-bottom : 40px;
-  text-align: center;
-  
-}
 
+.px-5{
+  margin-bottom: -1%;
+}
     .threeimglayout{
 
       /* margin-left: 250px */
@@ -596,15 +596,7 @@ width: 206PX; }
     text-decoration: none;
   }
 
-  .BestSellers{
-    
-      display: inline;
-      font-family: 'Arbil Display';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 31px;
-  }
+  
 
   .Featureimg{
     margin-left: 19%;
@@ -612,12 +604,7 @@ width: 206PX; }
     height: 800px;
   }
 
-  .Explore1{
-    margin-top : 20px;
-    text-align: center;
-    font-weight: 500px;
-    
-  }
+
 
 
 
@@ -677,14 +664,7 @@ width: 206PX; }
 
 
 
-      .Explore2{
-        margin-top : 20px;
-        margin-bottom: 5px;
-    text-align: center;
-    font-weight: 500px;
-
-      }
-
+     
       
 
 .img-blog{
