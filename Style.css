@@ -1,3 +1,13 @@
+:root{
+  --FirstColor:#96B6C5;
+  --SecColor : #ADC4CE;
+  --ThColor :#EEE0C9;
+  --FrColor: #F1F0E8;
+
+
+}
+
+
 .fa-solid fa-store{
     size: 20px;
 }
@@ -6,7 +16,8 @@
 .Heading-for-Title{
   text-align: center;
   font-family:Audiowide, sans-serif ;
-  margin: 2px;
+  margin: 8px 2px;
+
   padding: 2px;
   font-size: 40px;
 }
@@ -17,6 +28,12 @@ body{
   width: 100%;
   height: auto;
   overflow-x: hidden;
+  background-color: var(--ThColor);
+}
+
+*{
+  margin: 0;padding: 0;
+  /* background-color: var(--SecColor); */
 }
 
 section{
@@ -42,17 +59,6 @@ section{
 
 
 
-.navbar{
-    display: flex;
-    margin-left: 25rem;
-    margin-right: 25rem;
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    padding: 20px 50px;
-    background-color: whitesmoke;
-    box-shadow: 0 5px 15px rgb(0, 0,0,0.06);
-    /* margin-top: 60px; */
-}
 
 #header{
     background-color:lightgray ;
@@ -118,6 +124,236 @@ text-align: center;
 
 }
 
+/* here we are adding nabvbar and the dropdown */
+ 
+.navbar {
+  background-color: var(--FirstColor);
+  display: flex;
+  justify-content: center; /* Centering the navbar items */
+  align-items: center;
+  padding: 10px 5px;
+  position: sticky;
+  z-index: 1000; /* Ensuring navbar is above other content */
+}
+
+.navbar a,
+.navbar .dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navbar a:hover,
+.navbar .dropbtn:hover {
+  background-color: #575757;
+}
+
+/* Dropdown container - needs position: relative */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  background-color: inherit; /* Same background as navbar */
+  border: none;
+  outline: none;
+  font-family: inherit; /* Inherit font from navbar */
+  margin: 0; /* Remove default margins */
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1001; /* Ensuring dropdown is above the carousel */
+  top: 100%; /* Positioned below the dropdown button */
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Carousel styles */
+.carousel {
+  /* Space between navbar and carousel */
+  position: relative;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  z-index: 1; /* Carousel below dropdown */
+}
+/* end the navbar dropdown */
+
+/* here we are adding the cart section made my astha  */
+.slider{
+  background-color: #Eff3E0;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 2rem;
+  font: normal 1rem sans-serif;
+}
+
+.card {
+  position: relative;
+  width: 17rem;
+  height: 23rem;
+  background-color:lightgray;
+  color: #fff;
+  border-radius: 1rem;
+  border: .1rem solid transparent;
+  overflow: hidden;
+  box-shadow: 0 .2rem .6rem lightgray;
+  transition: .5s ease-in-out;
+}
+
+.card:hover{
+  border: .1rem solid lightgray;
+  transform: scale(1.05);
+}
+
+.card::before, .card::after{
+  position: absolute;
+  content: "";
+  background-color: #6c757d;
+  border-radius: 50%;
+  transition: .5s ease-in-out;
+  z-index: 100;
+}
+
+.card::before{
+  top: -6%;
+  right: -6%;
+  width: 9rem;
+  height: 9rem;
+}
+
+.card::after{
+  bottom: -6%;
+  left: -6%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.card:hover::before{
+  transform: scale(1.8);
+}
+
+.card:hover::after{
+  transform: scale(0);
+}
+
+.card-content{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 200;
+}
+
+.card-img,
+.card-title{
+  transform: translateY(4rem);
+  transition: .5s ease-in-out;
+}
+
+
+.card-img{
+  width: auto;
+  height: 9.5rem;
+}
+
+.card-title{
+  font-size: 1rem;
+  text-transform: capitalize;
+  transition-delay: .1s;
+}
+
+.card-body,
+.card-footer{
+  transform: translateY(8rem);
+  transition: .5s ease-in-out;
+}
+
+.card-body{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition-delay: .2s;
+}
+
+.card:hover .card-img,
+.card:hover .card-title,
+.card:hover .card-body,
+.card:hover .card-footer{
+  transform: translateY(0);
+}
+
+.card-footer{
+  transition-delay: .3s;
+  display: flex;
+  gap: 1rem;
+}
+
+.star{
+  font-size: 1.4rem;
+  color: gold;
+}
+
+.card-price{
+  font: bolder 1.5rem sans-sarif;
+}
+
+.botn{
+  padding: 1rem 1rem;
+  background-color: unset;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.btn-success{
+  background-color: #8d99ae;
+}
+
+.btn-border{
+  border: 2px solid #8d99ae;
+  background-color: #8d99ae;
+}
+/* ending the cart section by astha */
 .Neemans{
     
 
@@ -163,24 +399,13 @@ font-size:100%;
     ;
 }
 
- .navbar{
-  width: 100%;
-  margin: 0rem 0rem 0rem 0rem ;
-} 
+ 
 .collapse {
   margin:0rem 0rem 0rem 0rem;
   gap:0rem;
 }
 
-.navbar-nav{
-  margin:0rem 0rem 0rem 0rem;
-  gap:5rem;
-}
-.btn{
-  /* justify-content: center; */
-  /* gap: 0%; */
-  margin:0rem 0rem 0rem 6rem ;
-}
+
 
 
 
@@ -190,7 +415,7 @@ font-size:100%;
     
 }
 
-x
+
 
 .Achievment1{
   width: 100%;
@@ -759,7 +984,7 @@ width: 206PX; }
 /* here we are writing our footer css */
 
 .main-footer{
-  background-color: black;
+  /* background-color: black; */
   /* height: 70rem; */
   /* justify-content: center; */
 }
