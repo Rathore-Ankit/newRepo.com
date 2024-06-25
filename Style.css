@@ -127,7 +127,7 @@ text-align: center;
 /* here we are adding nabvbar and the dropdown */
  
 .navbar {
-  background-color: var(--FirstColor);
+  background-color:lightslategray;
   display: flex;
   justify-content: center; /* Centering the navbar items */
   align-items: center;
@@ -139,7 +139,7 @@ text-align: center;
 .navbar a,
 .navbar .dropbtn {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
@@ -354,6 +354,75 @@ text-align: center;
   background-color: #8d99ae;
 }
 /* ending the cart section by astha */
+
+/* here we are adding css for all the button property  */
+.Button-for-all {
+  --primary-color: #6c757d;
+  --secondary-color: #fff;
+  --hover-color: #495057;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 0px;
+  color: var(--secondary-color);
+  padding: 1em 2.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  margin: auto;
+  
+}
+.Button-for-all a{
+  color: #fff;
+}
+.Button-for-all .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.Button-for-all .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+  
+}
+
+.Button-for-all .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.Button-for-all:hover {
+  background-color: var(--hover-color);
+  
+}
+
+.Button-for-all:hover .arrow {
+  background: var(--secondary-color);
+}
+.Button-for-all:hover .arrow:before {
+  right: 0;
+}
+
+/* end the button css property */
 .Neemans{
     
 
@@ -752,70 +821,9 @@ width: 206PX; }
     /* VIEW ALL PRODUCT  CSS OPEN */
 
 
-  .View-product {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background: #e27aec;
-    font-family: "Montserrat", sans-serif;
-    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    cursor: pointer;
-    margin-left: 500px;
-    margin-top: 10PX;
-    
-    border: none;
-  }
   
-  .View-product:after {
-    content: " ";
-    width: 0%;
-    height: 100%;
-    background:lightgray ;
-    position: absolute;
-    transition: all 0.4s ease-in-out;
-    right: 0;
-  }
   
-  .View-product:hover::after {
-    right: auto;
-    left: 0;
-    width: 100%;
-  }
   
-  .View-product span {
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    padding: 18px 25px;
-    color: #fff;
-    font-size: 1.125em;
-    font-weight: 700;
-    letter-spacing: 0.3em;
-    z-index: 20;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .View-product:hover span {
-    color: #183153;
-    animation: scaleUp 0.3s ease-in-out;
-  }
-  
-  @keyframes scaleUp {
-    0% {
-      transform: scale(1);
-    }
-  
-    50% {
-      transform: scale(0.95);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
-  }
   
   #viewlink{
     text-decoration: none;
