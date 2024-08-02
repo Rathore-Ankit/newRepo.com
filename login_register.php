@@ -31,7 +31,7 @@ if (isset($_POST['register'])) {
             $stmt = $con->prepare("INSERT INTO registered_user (fullname, username, email, password) VALUES (?, ?, ?, ?)");
             $stmt->bind_param("ssss", $fullname, $username, $email, $hashed_password);
             if ($stmt->execute()) {
-                echo "<script>alert('Registration successful'); window.location.href='Index.html';</script>";
+                echo "<script>alert('Registration successful'); window.location.href='NeemanLogin.html';</script>";
             } else {
                 echo "<script>alert('Registration failed'); window.location.href='SignUp.html';</script>";
             }

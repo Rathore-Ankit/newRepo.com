@@ -4,5 +4,6 @@
     "git.detectSubmodules": true,
     "git.enableStatusBarSync": true,
     "git.postCommitCommand": "sync",
-    "git.promptToSaveFilesBeforeCommit": "staged"
+    "git.promptToSaveFilesBeforeCommit": "staged",
+    "liveServer.settings.port": 5501
 }
