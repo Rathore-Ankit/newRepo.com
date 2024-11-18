@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Information Form</title>
+    <style>
+/* Reset some default styling */
+body, h1, h2, label, input, select, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    margin-top: 15rem;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007BFF;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.success-message {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Shipping Information</h1>
+        <form id="customerForm">
+            <!-- Personal Information -->
+            <div class="form-section">
+                <h2>Personal Information</h2>
+                
+                
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <!-- Address Information -->
+            <div class="form-section">
+                <h2>Address Information</h2>
+                <label for="streetAddress">Street Address</label>
+                <input type="text" id="streetAddress" name="streetAddress" placeholder="Enter your street address" required>
+                
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city" required>
+                
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="Enter your state" required>
+                
+                <label for="zipCode">Zip Code</label>
+                <input type="text" id="zipCode" name="zipCode" placeholder="Enter your zip code" required>
+                
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="India">Canada</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Australia">Australia</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <button type="submit">Next</button>
+        </form>
+        <div id="successMessage" class="success-message">Your information has been successfully submitted!</div>
+    </div>
+
+    <script > 
+        // JavaScript code for form validation and submission handling
+document.getElementById('customerForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form from submitting in the default way
+
+    // Simulate form submission success
+    var successMessage = document.getElementById('successMessage');
+    successMessage.style.display = 'block';
+
+    // Here you would typically send the form data to the server using AJAX
+    // For example, using the Fetch API:
+    // fetch('/submit', {
+    //     method: 'POST',
+    //     body: new FormData(this)
+    // }).then(response => response.json()).then(data => {
+    //     if (data.success) {
+    //         successMessage.style.display = 'block';
+    //     }
+    // });
+
+    // Clear the form fields (optional)
+    this.reset();
+});
+
+    </script>
+</body>
+</html>

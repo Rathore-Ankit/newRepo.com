@@ -127,3 +127,30 @@ document.addEventListener("DOMContentLoaded", function() {
   
   
   
+  const searchBar = document.getElementById('search-bar');
+  const products = document.querySelectorAll('.product-box');
+  const pageContent = document.getElementById('page-content');
+  const productList = document.getElementById('product-list');
+
+  searchBar.addEventListener('input', () => {
+    const searchQuery = searchBar.value.toLowerCase();
+
+    let matchFound = false;
+    products.forEach(product => {
+      const productName = product.getAttribute('data-name').toLowerCase();
+
+      if (productName.includes(searchQuery)) {
+        product.style.display = 'block';  // Show the product if it matches
+        matchFound = true;
+      } else {
+        product.style.display = 'none';   // Hide the product if it doesn't match
+      }
+    });
+
+    if (searchQuery.length > 0 && matchFound) {
+      pageContent.style.display = 'none';  // Hide other content when searching
+    } else {
+      pageContent.style.display = 'block';  // Show other content if no search or no match
+      products.forEach(product => product.style.display = 'block'); // Show all products
+    }
+  });

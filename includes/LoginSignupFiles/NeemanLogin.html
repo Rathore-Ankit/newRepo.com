@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login</title>
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('img/NeemanBackground.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 1.5rem; /* Adjusted for smaller screens */
+    padding: 0 10px; /* Add padding for smaller screens */
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin: 10px; /* Add margin for spacing on small screens */
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 16px;
+}
+
+.forgot-password a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.create-account {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.create-account a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}
+@media (min-width: 320px) and (max-width: 479px) {
+    h1{margin: 2%;
+    width: 100%;}
+}
+@media (min-width: 480px) and (max-width: 639px) {
+   h1{ width: 100%;}
+}
+@media (min-width: 640px) and (max-width: 767px) {
+    /* Adjustments for mobile screens */
+    h1 {
+        top: 5%; /* More space on top for mobile */
+        width: 100%;
+    }
+
+    .login-container {
+        width: 90%; /* More flexible width for mobile */
+        padding: 20px; /* Consistent padding */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Adjustments for tablets */
+    h1 {
+        top: 2%;
+        font-size: 1.5rem; /* Slightly larger font size */
+        padding: 0 10px; /* Add padding for readability */
+        width: 100%;
+    }
+
+    .login-container {
+        width: 80%; /* Wider form for tablets */
+        max-width: 450px; /* Slightly larger max width */
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px)   {
+    /* Adjustments for larger screens */
+    h1 {
+        top: 2%;
+        left: 50%;
+        font-size: 2rem; /* Larger font size for desktops */
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 400px;
+        padding: 30px 40px; /* More padding for larger screens */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to The India's NO 1 Brand Neeman's</h1>
+    <div class="login-container">
+        <form action="login.php" method="post">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"  placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"  placeholder="Enter your password">
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="login-button" value="login" name="">Login</button>
+        </form>
+        <div class="create-account">
+            I don't have an account <a href="SignUp.html">Create an account</a>
+        </div>
+    </div>
+</body>
+</html>
+
