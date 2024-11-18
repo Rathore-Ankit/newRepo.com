@@ -52,7 +52,7 @@ section{
 .filled{
   width: 0%;
   height: 100%;
-  background-image: linear-gradient(135deg, #0000ff 0%, #ffffff 100%);
+  background-color: red;
 }
 
 
@@ -70,13 +70,21 @@ section{
     width: 60%; /* Adjust width as needed */
 
 }
-ul {
+.track-login-div{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.track-login-div ul  {
     display: flex;
     list-style-type: none;
     padding: 0;
     align-items: center;
+    margin-right: 50px;
+    gap: 50px;
+    
 }
-li {
+.track-login-div li {
     margin-right: 20px; /* Adjust margin as needed */
 }
 li:last-child {
@@ -458,17 +466,22 @@ font-size:100%;
 
 .Logodesign{
     font-family: "Audiowide", sans-serif;
-    margin-left: 35rem;  
+    margin-left: 35rem; 
+    font-size: 35px; 
 }
 
 .Neemans .content a:hover {
   color: blue; /* Change the color to blue when hovered */
 }
 
+.marqHead .Nav-Login-to-Help a:hover{
+  color: blue;
+}
+
 .Neemans h1{
     text-align: center;
     margin-top: 1%;
-    color: blue
+    color: rgb(82, 129, 6)
     ;
 }
 
@@ -632,11 +645,7 @@ z-index: 1;
     
 .container3 img{
         max-width: 100%; /* Ensures the image doesn't exceed the width of its container */
-            max-height: 100%;
-            /* margin-top: -6%; */
-            /* margin-bottom:1%; */
-
-    }
+            max-height: 100%;    }
 
     .product-card {
       width: 100%;
@@ -1723,29 +1732,25 @@ text-align: center;}
 
 
 .footer-div {
-  max-width: 1170px;
+  
   margin-top: 30px;
   display: flex;
   justify-content: center;
+  text-align: left;
+  border: 2px solid wheat;
+
 }
 
 .footer-div a {
   text-decoration: none;
 }
 
-.adjust_list{
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-/* .row {
-  display: flex;
-  justify-content: space-between;
-} */
+
+
 
 .footer-col {
-  width: 40%;
+  width: 15%;
   justify-content: center;
 }
 
@@ -1753,41 +1758,12 @@ text-align: center;}
   color: #E7F3EC;
   margin-top: 20px;
 
+} 
+
+.footer-col a:hover{
+  color:blue;
 }
 
-.listMargin1 {
-  margin-left: 9%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding-left: 0;
-}
-
-.listMargin2 {
-  margin-left: 32%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding-left: 0;
-  font-family: in;
-}
-
-.listMargin3 {
-  margin-left: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding-left: 0;
-}
-
-.listMargin4 {
-  margin-left: 35%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding-left: 0;
-
-}
 
 .listMargin li {
   margin-top: 10px;
@@ -1795,9 +1771,7 @@ text-align: center;}
   font-size: 15px;
 }
 
-.footer-col h4 {
-  margin-left: 0;
-}
+
 
 
  .footer-contact-details {
@@ -1808,8 +1782,6 @@ text-align: center;}
 
 .footer-aside
 {
-border-top: 2px solid #fff;
-/*  */
 margin: 20px 200px 0px 200px;
 display: flex ;
 justify-content: center;
@@ -1839,6 +1811,7 @@ text-decoration: none;
 
 .footer-icon li i:hover {
   color: blue; /* Change the color to blue when hovered */
+  
 }
 
 .footer-icon{
@@ -1848,10 +1821,10 @@ text-decoration: none;
   width:100%;
   text-align: revert;
   justify-content: end ;
-  color: palegoldenrod;
+  color: palegoldenrod;   
   cursor: pointer;
-  /* text-decoration: none; */
+  gap: 2px;
+  text-decoration: none;
   
-
 }
 /* footer css area end */

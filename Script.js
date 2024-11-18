@@ -111,3 +111,19 @@ update();
 
 
 })(jQuery);
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    const cartCount = document.querySelector('.cart-count');
+  
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        let count = parseInt(cartCount.textContent);
+        cartCount.textContent = count + 1;
+      });
+    });
+  });
+  
+  
+  

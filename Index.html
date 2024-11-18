@@ -30,7 +30,7 @@
 
 <body>
 
-  
+
   <div class="progress-Bar">
     <div class="filled">
 
@@ -43,7 +43,7 @@
     <div class="content">
       <a href=""><i class="fa-solid fa-magnifying-glass"></i>Search</a>
       <a href=""><i class="fa-solid fa-store"></i>Store</a>
-      <a href=""><i class="fa fa-shopping-cart"></i>Cart</a>
+      <a href="" class="cart-icon"><i class="fa fa-shopping-cart"></i>Cart<span class="cart-count">(0)</span></a>
     </div>
   </div>
 
@@ -68,110 +68,113 @@
         LOAFERS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &#128516 2M+ HAPPY CUSTOMERS
       </marquee>
-      <ul type="none" class="Nav-Login-to-Help">
-        <li> <a href="NeemanLogin.html">LOGIN/SIGNUP</a> </li>
-        <li> <a href="Trackdemo.html">TRACK YOUR ORDERS</a> </li>
-        
-      </ul>
+
+      <div class="track-login-div">
+        <ul type="none" class="Nav-Login-to-Help">
+          <li> <a href="NeemanLogin.html">LOGIN/SIGNUP</a> </li>
+          <li> <a href="Trackdemo.html">TRACK YOUR ORDERS</a> </li>
+
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- here we are applying bootstrap for header -->
 
   <div class="navbar">
-        
+
     <div class="dropdown">
-        <button class="dropbtn">Slippers 
-        </button>
-        <div class="dropdown-content">
-            <a href="#">Item 1</a>
-            <a href="#">Item 2</a>
-            <a href="#">Item 3</a>
-            <a href="#">Item 4</a>
-            <a href="#">Item 5</a>
-        </div>
+      <button class="dropbtn">Slippers
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+        <a href="#">Item 5</a>
+      </div>
     </div>
     <div class="dropdown">
       <button class="dropbtn">Loafers
       </button>
       <div class="dropdown-content">
-          <a href="#">Item 1</a>
-          <a href="#">Item 2</a>
-          <a href="#">Item 3</a>
-          <a href="#">Item 4</a>
-          <a href="#">Item 5</a>
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+        <a href="#">Item 5</a>
       </div>
-  </div> 
-    <div class="dropdown">
-        <button class="dropbtn">Shoes 
-        </button>
-        <div class="dropdown-content">
-            <a href="#">Item 1</a>
-            <a href="#">Item 2</a>
-            <a href="#">Item 3</a>
-            <a href="#">Item 4</a>
-            <a href="#">Item 5</a>
-        </div>
-    </div> 
-    <div class="dropdown">
-        <button class="dropbtn">About 
-        </button>
-        <div class="dropdown-content">
-            <a href="#">Item 1</a>
-            <a href="#">Item 2</a>
-            <a href="#">Item 3</a>
-            <a href="#">Item 4</a>
-            <a href="#">Item 5</a>
-        </div>
-    </div> 
-    <div class="dropdown">
-        <button class="dropbtn">Help 
-        </button>
-        <div class="dropdown-content">
-            <a href="ReturnExchange.html">Return & Exchange</a>
-            <a href="Trackdemo.html">Track Your Order</a>
-            <a href="ContactUs.html">Contact Us</a>
-            <a href="ReturnPolicy.html">Return Policy</a>
-        </div>
     </div>
     <div class="dropdown">
-        <button class="dropbtn">Sneakers 
-        </button>
-        <div class="dropdown-content">
-            <a href="#">Item 1</a>
-            <a href="#">Item 2</a>
-            <a href="#">Item 3</a>
-            <a href="#">Item 4</a>
-            <a href="#">Item 5</a>
-        </div>
+      <button class="dropbtn">Shoes
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+        <a href="#">Item 5</a>
+      </div>
     </div>
-</div>
+    <div class="dropdown">
+      <button class="dropbtn">About
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+        <a href="#">Item 5</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Help
+      </button>
+      <div class="dropdown-content">
+        <a href="ReturnExchange.html">Return & Exchange</a>
+        <a href="Trackdemo.html">Track Your Order</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="ReturnPolicy.html">Return Policy</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Sneakers
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+        <a href="#">Item 5</a>
+      </div>
+    </div>
+  </div>
 
   <!-- bootstrap end -->
 
 
-    <div id="carouselExampleFade" class="carousel slide carousel-fade">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a href="#"> <img src="img/CarausalImg1.png" class="d-block w-100" alt="..."></a>
-        </div>
-        <div class="carousel-item">
-          <a href="#"></a><img src="img/CarausalImg2.png" class="d-block w-100" alt="..."></a>
-        </div>
-        <div class="carousel-item">
-          <a href="#"> <img src="img/slideimg1.png" class="d-block w-100" alt="..."></a>
-        </div>
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="#"> <img src="img/CarausalImg1.png" class="d-block w-100" alt="..."></a>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div> 
-  
+      <div class="carousel-item">
+        <a href="#"></a><img src="img/CarausalImg2.png" class="d-block w-100" alt="..."></a>
+      </div>
+      <div class="carousel-item">
+        <a href="#"> <img src="img/slideimg1.png" class="d-block w-100" alt="..."></a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
 
   <section class="Achievment1">
     <div class="container1">
@@ -183,202 +186,210 @@
   </section>
 
 
-    <div class="container3">
-      <a href="DiscoountsixtyperNeemanImg/DiscoountsixtyperNeemanImg.html"> <img src="img/Neemanimg.png"
-          alt="Neeman image"></a>
+  <div class="container3">
+    <a href="DiscoountsixtyperNeemanImg/DiscoountsixtyperNeemanImg.html"> <img src="img/Neemanimg.png"
+        alt="Neeman image"></a>
+  </div>
+
+
+  <div class="Heading-for-Title">
+    Best Seller
+  </div>
+
+  <section class="slider">
+    <div class="card">
+      <div class="card-content">
+        <img src="img/Apple-iPhone-12-Pro.png" alt="" class="card-img">
+        <h1 class="card-title">HP Spectre x360 15</h1>
+        <div class="card-body">
+          <div class="card-star">
+            <span class="rating-value">4.5</span>
+            <span class="star">&#9733;</span>
+          </div>
+          <p class="card-price">$650.99</p>
+        </div>
+        <div class="card-footer">
+          <button class="botn btn-success">Buy Now</button>
+          <button class="botn btn-border">Add To Cart</button>
+        </div>
+      </div>
     </div>
 
-  
-    <div class="Heading-for-Title">
-      Best Seller
+    <div class="card">
+      <div class="card-content">
+        <img src="img/g233 prodigy gaming headset.png" alt="" class="card-img">
+        <h1 class="card-title">HP Spectre x360 15</h1>
+        <div class="card-body">
+          <div class="card-star">
+            <span class="rating-value">4.5</span>
+            <span class="star">&#9733;</span>
+          </div>
+          <p class="card-price">$650.99</p>
+        </div>
+        <div class="card-footer">
+          <button class="botn btn-success">Buy Now</button>
+          <button class="botn btn-border">Add To Cart</button>
+        </div>
       </div>
+    </div>
 
-      <section class="slider">
-        <div class="card">
-          <div class="card-content">
-            <img src="img/Apple-iPhone-12-Pro.png" alt="" class="card-img">
-            <h1 class="card-title">HP Spectre x360 15</h1>
-            <div class="card-body">
-              <div class="card-star">
-                <span class="rating-value">4.5</span>
-                <span class="star">&#9733;</span>
-              </div>
-              <p class="card-price">$650.99</p>
-            </div>
-            <div class="card-footer">
-              <button class="botn btn-success">Buy Now</button>
-              <button class="botn btn-border">Add To Cart</button>
-            </div>
+    <div class="card">
+      <div class="card-content">
+        <img src="img/laptop 3.png" alt="" class="card-img">
+        <h1 class="card-title">HP Spectre x360 15</h1>
+        <div class="card-body">
+          <div class="card-star">
+            <span class="rating-value">4.5</span>
+            <span class="star">&#9733;</span>
           </div>
+          <p class="card-price">$650.99</p>
         </div>
-         
-        <div class="card">
-          <div class="card-content">
-            <img src="img/g233 prodigy gaming headset.png" alt="" class="card-img">
-            <h1 class="card-title">HP Spectre x360 15</h1>
-            <div class="card-body">
-              <div class="card-star">
-                <span class="rating-value">4.5</span>
-                <span class="star">&#9733;</span>
-              </div>
-              <p class="card-price">$650.99</p>
-            </div>
-            <div class="card-footer">
-              <button class="botn btn-success">Buy Now</button>
-              <button class="botn btn-border">Add To Cart</button>
-            </div>
+        <div class="card-footer">
+          <button class="botn btn-success">Buy Now</button>
+          <button class="botn btn-border">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <img src="img/ipad.png" alt="" class="card-img">
+        <h1 class="card-title">HP Spectre x360 15</h1>
+        <div class="card-body">
+          <div class="card-star">
+            <span class="rating-value">4.5</span>
+            <span class="star">&#9733;</span>
           </div>
+          <p class="card-price">$650.99</p>
         </div>
-      
-        <div class="card">
-          <div class="card-content">
-            <img src="img/laptop 3.png" alt="" class="card-img">
-            <h1 class="card-title">HP Spectre x360 15</h1>
-            <div class="card-body">
-              <div class="card-star">
-                <span class="rating-value">4.5</span>
-                <span class="star">&#9733;</span>
-              </div>
-              <p class="card-price">$650.99</p>
-            </div>
-            <div class="card-footer">
-              <button class="botn btn-success">Buy Now</button>
-              <button class="botn btn-border">Add To Cart</button>
-            </div>
+        <div class="card-footer">
+          <button class="botn btn-success">Buy Now</button>
+          <button class="botn btn-border">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <img src="img/ROG StrixmWireless gaming headset.png" alt="" class="card-img">
+        <h1 class="card-title">HP Spectre x360 15</h1>
+        <div class="card-body">
+          <div class="card-star">
+            <span class="rating-value">4.5</span>
+            <span class="star">&#9733;</span>
           </div>
+          <p class="card-price">$650.99</p>
         </div>
-      
-        <div class="card">
-          <div class="card-content">
-            <img src="img/ipad.png" alt="" class="card-img">
-            <h1 class="card-title">HP Spectre x360 15</h1>
-            <div class="card-body">
-              <div class="card-star">
-                <span class="rating-value">4.5</span>
-                <span class="star">&#9733;</span>
-              </div>
-              <p class="card-price">$650.99</p>
-            </div>
-            <div class="card-footer">
-              <button class="botn btn-success">Buy Now</button>
-              <button class="botn btn-border">Add To Cart</button>
-            </div>
+        <div class="card-footer">
+          <button class="botn btn-success">Buy Now</button>
+          <button class="botn btn-border">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <img src="img/HP Spectre x360 15.png" alt="" class="card-img">
+        <h1 class="card-title">HP Spectre x360 15</h1>
+        <div class="card-body">
+          <div class="card-star">
+            <span class="rating-value">4.5</span>
+            <span class="star">&#9733;</span>
           </div>
+          <p class="card-price">$650.99</p>
         </div>
-      
-        <div class="card">
-          <div class="card-content">
-            <img src="img/ROG StrixmWireless gaming headset.png" alt="" class="card-img">
-            <h1 class="card-title">HP Spectre x360 15</h1>
-            <div class="card-body">
-              <div class="card-star">
-                <span class="rating-value">4.5</span>
-                <span class="star">&#9733;</span>
-              </div>
-              <p class="card-price">$650.99</p>
-            </div>
-            <div class="card-footer">
-              <button class="botn btn-success">Buy Now</button>
-              <button class="botn btn-border">Add To Cart</button>
-            </div>
+        <div class="card-footer">
+          <button class="botn btn-success">Buy Now</button>
+          <button class="botn btn-border">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <img src="img/g233 prodigy gaming headset.png" alt="" class="card-img">
+        <h1 class="card-title">HP Spectre x360 15</h1>
+        <div class="card-body">
+          <div class="card-star">
+            <span class="rating-value">4.5</span>
+            <span class="star">&#9733;</span>
           </div>
+          <p class="card-price">$650.99</p>
         </div>
-      
-        <div class="card">
-          <div class="card-content">
-            <img src="img/HP Spectre x360 15.png" alt="" class="card-img">
-            <h1 class="card-title">HP Spectre x360 15</h1>
-            <div class="card-body">
-              <div class="card-star">
-                <span class="rating-value">4.5</span>
-                <span class="star">&#9733;</span>
-              </div>
-              <p class="card-price">$650.99</p>
-            </div>
-            <div class="card-footer">
-              <button class="botn btn-success">Buy Now</button>
-              <button class="botn btn-border">Add To Cart</button>
-            </div>
+        <div class="card-footer">
+          <button class="botn btn-success">Buy Now</button>
+          <button class="botn btn-border">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <img src="img/HP Spectre x360 15.png" alt="" class="card-img">
+        <h1 class="card-title">HP Spectre x360 15</h1>
+        <div class="card-body">
+          <div class="card-star">
+            <span class="rating-value">4.5</span>
+            <span class="star">&#9733;</span>
           </div>
+          <p class="card-price">$650.99</p>
         </div>
-      
-        <div class="card">
-          <div class="card-content">
-            <img src="img/g233 prodigy gaming headset.png" alt="" class="card-img">
-            <h1 class="card-title">HP Spectre x360 15</h1>
-            <div class="card-body">
-              <div class="card-star">
-                <span class="rating-value">4.5</span>
-                <span class="star">&#9733;</span>
-              </div>
-              <p class="card-price">$650.99</p>
-            </div>
-            <div class="card-footer">
-              <button class="botn btn-success">Buy Now</button>
-              <button class="botn btn-border">Add To Cart</button>
-            </div>
-          </div>
+        <div class="card-footer">
+          <button class="botn btn-success">Buy Now</button>
+          <button class="botn btn-border">Add To Cart</button>
         </div>
-      
-        <div class="card">
-          <div class="card-content">
-            <img src="img/HP Spectre x360 15.png" alt="" class="card-img">
-            <h1 class="card-title">HP Spectre x360 15</h1>
-            <div class="card-body">
-              <div class="card-star">
-                <span class="rating-value">4.5</span>
-                <span class="star">&#9733;</span>
-              </div>
-              <p class="card-price">$650.99</p>
-            </div>
-            <div class="card-footer">
-              <button class="botn btn-success">Buy Now</button>
-              <button class="botn btn-border">Add To Cart</button>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
   <div class="Heading-for-Title">
     Explore Our Categories
-    </div>
+  </div>
 
   <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-wrap -m-4">
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://i.pinimg.com/236x/cd/d2/35/cdd2358122fd186ff06ccd0f598e059e.jpg">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://i.pinimg.com/236x/cd/d2/35/cdd2358122fd186ff06ccd0f598e059e.jpg">
           </a>
           <div class="mt-4">
             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
             <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
-            <p class="mt-1">$16.00</p>
+            <span><p class="mt-1">$16.00</p>
+            <button> buy</button></span> 
+
           </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://i.pinimg.com/236x/f3/a0/1c/f3a01cfdc8b9075aa067709cc72c2598.jpg">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://i.pinimg.com/236x/f3/a0/1c/f3a01cfdc8b9075aa067709cc72c2598.jpg">
           </a>
           <div class="mt-4">
             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
             <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
             <p class="mt-1">$21.15</p>
+
           </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://i.pinimg.com/236x/1c/6f/1f/1c6f1faed9aefbc857e6a9dcad25c9be.jpg">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://i.pinimg.com/236x/1c/6f/1f/1c6f1faed9aefbc857e6a9dcad25c9be.jpg">
           </a>
           <div class="mt-4">
             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
             <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
             <p class="mt-1">$12.00</p>
+
           </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://i.pinimg.com/236x/aa/e9/a6/aae9a6c0449485a93f09dfa462b02760.jpg">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://i.pinimg.com/236x/aa/e9/a6/aae9a6c0449485a93f09dfa462b02760.jpg">
           </a>
           <div class="mt-4">
             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -388,7 +399,8 @@
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://i.pinimg.com/236x/67/90/a6/6790a63beca1392c2f81f735308aff2c.jpg">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://i.pinimg.com/236x/67/90/a6/6790a63beca1392c2f81f735308aff2c.jpg">
           </a>
           <div class="mt-4">
             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -398,7 +410,8 @@
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://i.pinimg.com/236x/59/b2/2e/59b22ea9796b90a9c7bc45f45ef18232.jpg">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://i.pinimg.com/236x/59/b2/2e/59b22ea9796b90a9c7bc45f45ef18232.jpg">
           </a>
           <div class="mt-4">
             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -408,7 +421,8 @@
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://i.pinimg.com/236x/79/63/f6/7963f6855b896c7986e5f5515e29e33d.jpg">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://i.pinimg.com/236x/79/63/f6/7963f6855b896c7986e5f5515e29e33d.jpg">
           </a>
           <div class="mt-4">
             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -418,7 +432,8 @@
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://i.pinimg.com/236x/55/4e/e9/554ee9d48ea0966dec108bec3824f9b2.jpg">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://i.pinimg.com/236x/55/4e/e9/554ee9d48ea0966dec108bec3824f9b2.jpg">
           </a>
           <div class="mt-4">
             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -429,58 +444,58 @@
       </div>
     </div>
   </section>
-  
- 
-<div >
-  <button class="Button-for-all">
-    <a href="#">VIEW ALL PRODUCT</a>
-     <div class="arrow-wrapper">
-         <div class="arrow"></div>
-     </div>
- </button>
-</div>
-  
+
+
+  <div>
+    <button class="Button-for-all">
+      <a href="#">VIEW ALL PRODUCT</a>
+      <div class="arrow-wrapper">
+        <div class="arrow"></div>
+      </div>
+    </button>
+  </div>
+
 
   <div class="Heading-for-Title">
     Shop By Collection
-    </div>
-   
-    <div class="img-blog">
+  </div>
 
-      <div class="blogContainer-ShopByCol">
-        <a href="Shop-By-Collection-BackPages/Shop-by-Collection-men-Section.html"><img src="img/ManShoesNeeman"
-            alt=""></a>
-      </div>
-  
-      <div class="blogContainer-ShopByCol">
-        <a href="https://neemans.com/"> <img src="img/WomanleeperNeeman" alt=""></a>
-      </div>
-  
-  
-      <div class="blogContainer-ShopByCol">
-        <a href="https://neemans.com/"> <img src="img/SummerSlipperNeeman" alt=""></a>
-      </div>
-  
-      <div class="blogContainer-ShopByCol">
-        <a href="DiscoountsixtyperNeemanImg/ShopByCollTrendingShoes/TrendingShoes.html"> <img
-            src="img/TrendingShoesNeeman" alt=""></a>
-      </div>
-  
-    </div>
-    <div >
-      <button class="Button-for-all">
-        <a href="#">VIEW ALL PRODUCT</a>
-         <div class="arrow-wrapper">
-             <div class="arrow"></div>
-         </div>
-     </button>
+  <div class="img-blog">
+
+    <div class="blogContainer-ShopByCol">
+      <a href="Shop-By-Collection-BackPages/Shop-by-Collection-men-Section.html"><img src="img/ManShoesNeeman"
+          alt=""></a>
     </div>
 
-  
+    <div class="blogContainer-ShopByCol">
+      <a href="https://neemans.com/"> <img src="img/WomanleeperNeeman" alt=""></a>
+    </div>
+
+
+    <div class="blogContainer-ShopByCol">
+      <a href="https://neemans.com/"> <img src="img/SummerSlipperNeeman" alt=""></a>
+    </div>
+
+    <div class="blogContainer-ShopByCol">
+      <a href="DiscoountsixtyperNeemanImg/ShopByCollTrendingShoes/TrendingShoes.html"> <img
+          src="img/TrendingShoesNeeman" alt=""></a>
+    </div>
+
+  </div>
+  <div>
+    <button class="Button-for-all">
+      <a href="#">VIEW ALL PRODUCT</a>
+      <div class="arrow-wrapper">
+        <div class="arrow"></div>
+      </div>
+    </button>
+  </div>
+
+
 
   <div class="Heading-for-Title">
-   Our Featured Products
-    </div>
+    Our Featured Products
+  </div>
 
 
   <div class="threeimglayout">
@@ -489,10 +504,10 @@
 
 
   <div class="Heading-for-Title">
-   Customer Testimonials
-    </div>
+    Customer Testimonials
+  </div>
 
- 
+
 
   <div class="box-area">
     <div class="single-box">
@@ -533,7 +548,7 @@
 
 
 
- 
+
 
   <!-- <div class="video-container">
     <video width="100%" height="100%" preload="">
@@ -606,10 +621,10 @@
     <a href="https://neemans.com/"> <img src="img/Downimg-FashionImpact.png" alt="" width="100%" height="auto"></a>
   </div>
 
- 
+
   <div class="Heading-for-Title">
     Our Blogs
-    </div>
+  </div>
 
   <div class="img-blog">
 
@@ -633,127 +648,127 @@
   </div>
 
 
-  <div >
+  <div>
     <button class="Button-for-all">
       <a href="#">VIEW ALL PRODUCT</a>
-       <div class="arrow-wrapper">
-           <div class="arrow"></div>
-       </div>
-   </button>
+      <div class="arrow-wrapper">
+        <div class="arrow"></div>
+      </div>
+    </button>
   </div>
 
 
   <!-- <img class="footer-image " src="img/bottleshoes.png" alt="Bottle image"> -->
   <footer class="main-footer">
+
     <div class="footer-container">
+      <h1>Our page has come to an end,<br>
+        but our relationship with you has not.</h1>
+      <p> STAY SUSTAINABLE AND SUBSCRIBE NOW </p>
 
+      <div class="form-box">
+        <form action="subscribe.php" method="post">
+          <input type="text" name="email" placeholder="enter your email">
+          <button type="submit"> Subscribe</button>
+        </form>
+      </div>
 
-<h1>Our page has come to an end,<br>
-but our relationship with you has not.</h1>
-
-<p> STAY SUSTAINABLE AND SUBSCRIBE NOW </p>
-
-<form action="post">
-        
-  <div class="form-box">
-      <input type="text" name="email" placeholder="enter your email">
-      <button type="submit"> Subscribe</button>
     </div>
-
 
     <div class="footer-div">
-      <!-- <div class="row"> -->
-        
 
-       
-          <div class="footer-col">
-              <h4>SHOP FOR MEN</h4>
-              
-              <ul class="listMargin1" type="none">
-                  <li><a href="#">Shoes</a></li>
-                  <li><a href="#">Sneakers</a></li>
-                  <li><a href="#">Slippers</a></li>
-                  <li><a href="#">Slip- Ones</a></li>
-                  <li><a href="#">Sliders</a></li>
-                  <li><a href="#">Sandles</a></li>
-                  <li><a href="#">Athelisure</a></li>
-                  <li><a href="#">Loafers</a></li>
-              </ul>
-          </div>
+      <div class="footer-col">
+        <h4>SHOP FOR MEN</h4>
 
-          <div class="footer-col">
-              <h4>SHOP FOR WOMEN</h4>
-              <ul class="listMargin2" type="none">
-                  <li><a href="#">Type</a></li>
-                  <li><a href="#">New Arrivals</i></a></li>
-                  <li><a href="#">Best Seller</i></a></li>
-                  <li><a href="#">Purpose</a></li>
-                  <li><a href="#"> Formal Shoes</i></a></li>
-                  <li><a href="#">Casual Shoes</i></a></li>
-              </ul>
-          </div>
-  
-          <div class="footer-col">
-              <h4>INFORMATION</h4>
-              <ul class="listMargin3" type="none">
-                  <li><a href="#">Track Your Order</a></li>
-                  <li><a href="#">Positive Change</a></li>
-                  <li><a href="#">The journey</a></li>
-                  <li><a href="#">Why Neeman's</a></li>
-                  <li><a href="#">Our Stories</a></li>
-                  <li><a href="#">Press</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">FAQ</a></li>
-              </ul>
-          </div>
-  
-          <div class="footer-col">
-              <h4>GUIDES</h4>
-              <ul class="listMargin4" type="none">
-                  <li><a href="#">Schedule Exchange</a></li>
-                  <li><a href="#">Shoe Care</a></li>
-                  <li><a href="#">Returns Policy</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Cookie Policy</a></li>
-                  <li><a href="#">Terms & Conditions</a></li>
-              </ul>
-          <!-- </div> -->
+        <ul class="listMargin" type="none">
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Sneakers</a></li>
+          <li><a href="#">Slippers</a></li>
+          <li><a href="#">Slip- Ones</a></li>
+          <li><a href="#">Sliders</a></li>
+          <li><a href="#">Sandles</a></li>
+          <li><a href="#">Athelisure</a></li>
+          <li><a href="#">Loafers</a></li>
+        </ul>
       </div>
+
+      <div class="footer-col">
+        <h4>SHOP FOR WOMEN</h4>
+        <ul class="listMargin" type="none">
+          <li><a href="#">Type</a></li>
+          <li><a href="#">New Arrivals</i></a></li>
+          <li><a href="#">Best Seller</i></a></li>
+          <li><a href="#">Purpose</a></li>
+          <li><a href="#"> Formal Shoes</i></a></li>
+          <li><a href="#">Casual Shoes</i></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>INFORMATION</h4>
+        <ul class="listMargin" type="none">
+          <li><a href="#">Track Your Order</a></li>
+          <li><a href="#">Positive Change</a></li>
+          <li><a href="#">The journey</a></li>
+          <li><a href="#">Why Neeman's</a></li>
+          <li><a href="#">Our Stories</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>GUIDES</h4>
+        <ul class="listMargin" type="none">
+          <li><a href="#">Schedule Exchange</a></li>
+          <li><a href="#">Shoe Care</a></li>
+          <li><a href="#">Returns Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
     </div>
-  </div>
 
 
-  
-</form>      
-</div> 
 
 
-<div class="footer-aside">
-<div class="footer-contact-details">
-  <h2 >CONTACT US -</h2>
+    <div class="footer-aside">
+      <div class="footer-contact-details">
+        <h2>CONTACT US -</h2>
 
-  <p>WhatsApp: <a href="https://wa.me/917337332584?text=Hey,%20Let%27s%20chat">+91 73373-32584</a></p>
+        <p>WhatsApp: <a href="https://wa.me/917337332584?text=Hey,%20Let%27s%20chat">+91 73373-32584</a></p>
 
-    <p>Call: <a href="https://wa.me/917337332584?text=Hey,%20Let%27s%20chat">+91 73373-32584</a></p>
-      <p>  (9:30AM to 6:30PM on Weekdays)</p>
-</div>
+        <p>Call: <a href="https://wa.me/917337332584?text=Hey,%20Let%27s%20chat">+91 73373-32584</a></p>
+        <p> (9:30AM to 6:30PM on Weekdays)</p>
+      </div>
 
 
-<div class="fotter-aside2">
+      <div class="fotter-aside2">
 
-  <ul class="footer-icon">
- <li>   <a href="www.google.com"> <i class="ri-instagram-line " style="font-size: 30px;" ></i></a></li>
-   <a href=""> <li><i class="ri-facebook-circle-line" style="font-size: 30px;"></a></i></li>
-  <a href=""><li><i class="ri-youtube-line" style="font-size: 30px;" ></i></a></li>
-  <a href=""><li><i class="ri-linkedin-box-line" style="font-size: 30px;"></a></i></li>
-  <a href=""><li><i class="ri-twitter-x-line" style="font-size: 30px;"></i></a></li>
-  </ul>
+        <ul class="footer-icon">
+          <li> <a href="www.google.com"> <i class="ri-instagram-line " style="font-size: 30px;"></i></a></li>
+          <a href="">
+            <li><i class="ri-facebook-circle-line" style="font-size: 30px;">
+          </a></i></li>
+          <a href="">
+            <li><i class="ri-youtube-line" style="font-size: 30px;"></i>
+          </a></li>
+          <a href="">
+            <li><i class="ri-linkedin-box-line" style="font-size: 30px;">
+          </a></i></li>
+          <a href="">
+            <li><i class="ri-twitter-x-line" style="font-size: 27px;"></i>
+          </a></li>
+        </ul>
 
-</div>
+      </div>
 
-</div>
-              
-</footer> 
+    </div>
+
+  </footer>
 
   <script src="Script.js"> </script>
 
